@@ -1,0 +1,1042 @@
+================ For the Year 2022 ================
+
+Baseline Balance Sheets:
+              Bank  Liquid Assets  Volatile Funding  Tangible Equity  Initial Liquidity Buffer
+          Barclays   421808000000      362544000000      60053000000               59264000000
+              HSBC   233089127000      280803222000     138229089000              -47714095000
+           NatWest    44416000000      104368000000      29372000000              -59952000000
+           Lloyd's    45523000000       25582000000      36052000000               19941000000
+         Santander    91127959000      108302740000      62480270000              -17174781000
+Standard Chartered   101963619000       58029737000      36379267000               43933882000
+
+
+Exposure Matrix (Before Diagonal Corrections):
+
+                      Barclays        HSBC    NatWest    Lloyd's  Standard Chartered  Santander
+Barclays           162,749,176 126,055,025 46,851,709 11,483,984          48,618,048 26,050,057
+HSBC                89,934,433  69,657,417 25,890,035  6,345,996          26,866,106 14,395,140
+NatWest             17,137,341  13,273,480  4,933,442  1,209,253           5,119,436  2,743,047
+Lloyd's             17,564,462  13,604,301  5,056,401  1,239,392           5,247,030  2,811,414
+Standard Chartered  35,160,548  27,233,095 10,121,905  2,481,015          10,503,508  5,627,889
+Santander           39,341,347  30,471,273 11,325,460  2,776,023          11,752,438  6,297,079
+
+
+Liability Matrix (After Diagonal Corrections):
+
+                      Barclays        HSBC    NatWest    Lloyd's  Standard Chartered  Santander
+Barclays                     0 220,355,659 69,653,001 17,060,427          74,576,140 40,162,773
+HSBC               179,286,615           0 18,602,447  4,556,382          19,917,285 10,726,398
+NatWest             29,133,166   9,563,002          0    740,389           3,236,458  1,742,985
+Lloyd's             28,399,874   9,322,298  2,946,718          0           3,154,995  1,699,114
+Standard Chartered  60,061,200  19,715,173  6,231,839  1,526,393                   0  3,593,355
+Santander           65,006,452  21,338,458  6,744,949  1,652,071           7,221,688          0
+
+----- Using runoff rate: 0.1 -----
+Initial Breaches: []
+Final Failed Banks: []
+Surviving Banks: ['Barclays', 'HSBC', 'NatWest', "Lloyd's", 'Santander', 'Standard Chartered']
+Total Cascade Size: 0
+
+
+----- Using runoff rate: 0.2 -----
+Initial Breaches: []
+Final Failed Banks: []
+Surviving Banks: ['Barclays', 'HSBC', 'NatWest', "Lloyd's", 'Santander', 'Standard Chartered']
+Total Cascade Size: 0
+
+
+----- Using runoff rate: 0.3 -----
+Initial Breaches: []
+Final Failed Banks: []
+Surviving Banks: ['Barclays', 'HSBC', 'NatWest', "Lloyd's", 'Santander', 'Standard Chartered']
+Total Cascade Size: 0
+
+
+----- Using runoff rate: 0.4 -----
+Initial Breaches: []
+Final Failed Banks: []
+Surviving Banks: ['Barclays', 'HSBC', 'NatWest', "Lloyd's", 'Santander', 'Standard Chartered']
+Total Cascade Size: 0
+
+
+----- Using runoff rate: 0.5 -----
+Impact of failure of NatWest:
+↳ Impact on Barclays:
+• Exposure to NatWest: £69,653,000,857.45
+• Stressed Assets:  £240,536,000,000.00 is now £170,882,999,142.55
+• Remaining Buffer: £-10,389,000,857.45
+↳ Impact on HSBC:
+• Exposure to NatWest: £18,602,446,646.14
+• Stressed Assets:  £92,687,516,000.00 is now £74,085,069,353.86
+• Remaining Buffer: £-66,316,541,646.14
+↳ Impact on Lloyd's:
+• Exposure to NatWest: £2,946,718,300.82
+• Stressed Assets:  £32,732,000,000.00 is now £29,785,281,699.18
+• Remaining Buffer: £16,994,281,699.18
+↳ Impact on Standard Chartered:
+• Exposure to NatWest: £6,231,838,763.46
+• Stressed Assets:  £72,948,750,500.00 is now £66,716,911,736.54
+• Remaining Buffer: £37,702,043,236.54
+↳ Impact on Santander:
+• Exposure to NatWest: £6,744,948,927.98
+• Stressed Assets:  £36,976,589,000.00 is now £30,231,640,072.02
+• Remaining Buffer: £-23,919,729,927.98
+Impact of failure of Barclays:
+↳ Impact on Lloyd's:
+• Exposure to Barclays: £28,399,874,432.41
+• Stressed Assets:  £29,785,281,699.18 is now £1,385,407,266.78
+• Remaining Buffer: £-11,405,592,733.22
+↳ Impact on Standard Chartered:
+• Exposure to Barclays: £60,061,200,392.45
+• Stressed Assets:  £66,716,911,736.54 is now £6,655,711,344.09
+• Remaining Buffer: £-22,359,157,155.91
+Impact of failure of HSBC:
+No surviving counterparties to continue cascade analysis.
+Impact of failure of Santander:
+No surviving counterparties to continue cascade analysis.
+Impact of failure of Lloyd's:
+No surviving counterparties to continue cascade analysis.
+Impact of failure of Standard Chartered:
+No surviving counterparties to continue cascade analysis.
+Initial Breaches: ['NatWest']
+Final Failed Banks: ['Barclays', 'HSBC', 'NatWest', "Lloyd's", 'Santander', 'Standard Chartered']
+Surviving Banks: []
+Total Cascade Size: 6
+
+
+----- Using runoff rate: 0.6 -----
+Impact of failure of NatWest:
+↳ Impact on Barclays:
+• Exposure to NatWest: £69,653,000,857.45
+• Stressed Assets:  £204,281,600,000.00 is now £134,628,599,142.55
+• Remaining Buffer: £-10,389,000,857.45
+↳ Impact on HSBC:
+• Exposure to NatWest: £18,602,446,646.14
+• Stressed Assets:  £64,607,193,800.00 is now £46,004,747,153.86
+• Remaining Buffer: £-66,316,541,646.14
+↳ Impact on Lloyd's:
+• Exposure to NatWest: £2,946,718,300.82
+• Stressed Assets:  £30,173,800,000.00 is now £27,227,081,699.18
+• Remaining Buffer: £16,994,281,699.18
+↳ Impact on Standard Chartered:
+• Exposure to NatWest: £6,231,838,763.46
+• Stressed Assets:  £67,145,776,800.00 is now £60,913,938,036.54
+• Remaining Buffer: £37,702,043,236.54
+↳ Impact on Santander:
+• Exposure to NatWest: £6,744,948,927.98
+• Stressed Assets:  £26,146,315,000.00 is now £19,401,366,072.02
+• Remaining Buffer: £-23,919,729,927.98
+Impact of failure of Barclays:
+↳ Impact on Lloyd's:
+• Exposure to Barclays: £28,399,874,432.41
+• Stressed Assets:  £27,227,081,699.18 is now £-1,172,792,733.22
+• Remaining Buffer: £-11,405,592,733.22
+↳ Impact on Standard Chartered:
+• Exposure to Barclays: £60,061,200,392.45
+• Stressed Assets:  £60,913,938,036.54 is now £852,737,644.09
+• Remaining Buffer: £-22,359,157,155.91
+Impact of failure of HSBC:
+No surviving counterparties to continue cascade analysis.
+Impact of failure of Santander:
+No surviving counterparties to continue cascade analysis.
+Impact of failure of Lloyd's:
+No surviving counterparties to continue cascade analysis.
+Impact of failure of Standard Chartered:
+No surviving counterparties to continue cascade analysis.
+Initial Breaches: ['NatWest']
+Final Failed Banks: ['Barclays', 'HSBC', 'NatWest', "Lloyd's", 'Santander', 'Standard Chartered']
+Surviving Banks: []
+Total Cascade Size: 6
+
+
+----- Using runoff rate: 0.7 -----
+Impact of failure of NatWest:
+↳ Impact on Barclays:
+• Exposure to NatWest: £69,653,000,857.45
+• Stressed Assets:  £168,027,200,000.00 is now £98,374,199,142.55
+• Remaining Buffer: £-10,389,000,857.45
+↳ Impact on HSBC:
+• Exposure to NatWest: £18,602,446,646.14
+• Stressed Assets:  £36,526,871,600.00 is now £17,924,424,953.86
+• Remaining Buffer: £-66,316,541,646.14
+↳ Impact on Lloyd's:
+• Exposure to NatWest: £2,946,718,300.82
+• Stressed Assets:  £27,615,600,000.00 is now £24,668,881,699.18
+• Remaining Buffer: £16,994,281,699.18
+↳ Impact on Standard Chartered:
+• Exposure to NatWest: £6,231,838,763.46
+• Stressed Assets:  £61,342,803,100.00 is now £55,110,964,336.54
+• Remaining Buffer: £37,702,043,236.54
+↳ Impact on Santander:
+• Exposure to NatWest: £6,744,948,927.98
+• Stressed Assets:  £15,316,041,000.00 is now £8,571,092,072.02
+• Remaining Buffer: £-23,919,729,927.98
+Impact of failure of Barclays:
+↳ Impact on Lloyd's:
+• Exposure to Barclays: £28,399,874,432.41
+• Stressed Assets:  £24,668,881,699.18 is now £-3,730,992,733.22
+• Remaining Buffer: £-11,405,592,733.22
+↳ Impact on Standard Chartered:
+• Exposure to Barclays: £60,061,200,392.45
+• Stressed Assets:  £55,110,964,336.54 is now £-4,950,236,055.91
+• Remaining Buffer: £-22,359,157,155.91
+Impact of failure of HSBC:
+No surviving counterparties to continue cascade analysis.
+Impact of failure of Santander:
+No surviving counterparties to continue cascade analysis.
+Impact of failure of Lloyd's:
+No surviving counterparties to continue cascade analysis.
+Impact of failure of Standard Chartered:
+No surviving counterparties to continue cascade analysis.
+Initial Breaches: ['NatWest']
+Final Failed Banks: ['Barclays', 'HSBC', 'NatWest', "Lloyd's", 'Santander', 'Standard Chartered']
+Surviving Banks: []
+Total Cascade Size: 6
+
+
+----- Using runoff rate: 0.8 -----
+Impact of failure of NatWest:
+↳ Impact on Barclays:
+• Exposure to NatWest: £69,653,000,857.45
+• Stressed Assets:  £131,772,800,000.00 is now £62,119,799,142.55
+• Remaining Buffer: £-10,389,000,857.45
+↳ Impact on HSBC:
+• Exposure to NatWest: £18,602,446,646.14
+• Stressed Assets:  £8,446,549,400.00 is now £-10,155,897,246.14
+• Remaining Buffer: £-66,316,541,646.14
+↳ Impact on Lloyd's:
+• Exposure to NatWest: £2,946,718,300.82
+• Stressed Assets:  £25,057,400,000.00 is now £22,110,681,699.18
+• Remaining Buffer: £16,994,281,699.18
+↳ Impact on Standard Chartered:
+• Exposure to NatWest: £6,231,838,763.46
+• Stressed Assets:  £55,539,829,400.00 is now £49,307,990,636.54
+• Remaining Buffer: £37,702,043,236.54
+↳ Impact on Santander:
+• Exposure to NatWest: £6,744,948,927.98
+• Stressed Assets:  £4,485,767,000.00 is now £-2,259,181,927.98
+• Remaining Buffer: £-23,919,729,927.98
+Impact of failure of Barclays:
+↳ Impact on Lloyd's:
+• Exposure to Barclays: £28,399,874,432.41
+• Stressed Assets:  £22,110,681,699.18 is now £-6,289,192,733.22
+• Remaining Buffer: £-11,405,592,733.22
+↳ Impact on Standard Chartered:
+• Exposure to Barclays: £60,061,200,392.45
+• Stressed Assets:  £49,307,990,636.54 is now £-10,753,209,755.91
+• Remaining Buffer: £-22,359,157,155.91
+Impact of failure of HSBC:
+No surviving counterparties to continue cascade analysis.
+Impact of failure of Santander:
+No surviving counterparties to continue cascade analysis.
+Impact of failure of Lloyd's:
+No surviving counterparties to continue cascade analysis.
+Impact of failure of Standard Chartered:
+No surviving counterparties to continue cascade analysis.
+Initial Breaches: ['NatWest']
+Final Failed Banks: ['Barclays', 'HSBC', 'NatWest', "Lloyd's", 'Santander', 'Standard Chartered']
+Surviving Banks: []
+Total Cascade Size: 6
+
+
+----- Using runoff rate: 0.9 -----
+Impact of failure of HSBC:
+↳ Impact on Barclays:
+• Exposure to HSBC: £220,355,658,780.93
+• Stressed Assets:  £95,518,400,000.00 is now £-124,837,258,780.93
+• Remaining Buffer: £-161,091,658,780.93
+↳ Impact on Lloyd's:
+• Exposure to HSBC: £9,322,298,313.42
+• Stressed Assets:  £22,499,200,000.00 is now £13,176,901,686.58
+• Remaining Buffer: £10,618,701,686.58
+↳ Impact on Standard Chartered:
+• Exposure to HSBC: £19,715,172,630.53
+• Stressed Assets:  £49,736,855,700.00 is now £30,021,683,069.47
+• Remaining Buffer: £24,218,709,369.47
+Impact of failure of NatWest:
+↳ Impact on Lloyd's:
+• Exposure to NatWest: £2,946,718,300.82
+• Stressed Assets:  £13,176,901,686.58 is now £10,230,183,385.77
+• Remaining Buffer: £7,671,983,385.77
+↳ Impact on Standard Chartered:
+• Exposure to NatWest: £6,231,838,763.46
+• Stressed Assets:  £30,021,683,069.47 is now £23,789,844,306.00
+• Remaining Buffer: £17,986,870,606.00
+Impact of failure of Santander:
+↳ Impact on Lloyd's:
+• Exposure to Santander: £1,699,113,843.76
+• Stressed Assets:  £10,230,183,385.77 is now £8,531,069,542.01
+• Remaining Buffer: £5,972,869,542.01
+↳ Impact on Standard Chartered:
+• Exposure to Santander: £3,593,354,516.49
+• Stressed Assets:  £23,789,844,306.00 is now £20,196,489,789.51
+• Remaining Buffer: £14,393,516,089.51
+Impact of failure of Barclays:
+↳ Impact on Lloyd's:
+• Exposure to Barclays: £28,399,874,432.41
+• Stressed Assets:  £8,531,069,542.01 is now £-19,868,804,890.40
+• Remaining Buffer: £-22,427,004,890.40
+↳ Impact on Standard Chartered:
+• Exposure to Barclays: £60,061,200,392.45
+• Stressed Assets:  £20,196,489,789.51 is now £-39,864,710,602.94
+• Remaining Buffer: £-45,667,684,302.94
+Impact of failure of Lloyd's:
+No surviving counterparties to continue cascade analysis.
+Impact of failure of Standard Chartered:
+No surviving counterparties to continue cascade analysis.
+Initial Breaches: ['HSBC', 'NatWest', 'Santander']
+Final Failed Banks: ['Barclays', 'HSBC', 'NatWest', "Lloyd's", 'Santander', 'Standard Chartered']
+Surviving Banks: []
+Total Cascade Size: 6
+
+
+----- Using runoff rate: 1.0 -----
+Impact of failure of HSBC:
+↳ Impact on Barclays:
+• Exposure to HSBC: £220,355,658,780.93
+• Stressed Assets:  £59,264,000,000.00 is now £-161,091,658,780.93
+• Remaining Buffer: £-161,091,658,780.93
+↳ Impact on Lloyd's:
+• Exposure to HSBC: £9,322,298,313.42
+• Stressed Assets:  £19,941,000,000.00 is now £10,618,701,686.58
+• Remaining Buffer: £10,618,701,686.58
+↳ Impact on Standard Chartered:
+• Exposure to HSBC: £19,715,172,630.53
+• Stressed Assets:  £43,933,882,000.00 is now £24,218,709,369.47
+• Remaining Buffer: £24,218,709,369.47
+Impact of failure of NatWest:
+↳ Impact on Lloyd's:
+• Exposure to NatWest: £2,946,718,300.82
+• Stressed Assets:  £10,618,701,686.58 is now £7,671,983,385.77
+• Remaining Buffer: £7,671,983,385.77
+↳ Impact on Standard Chartered:
+• Exposure to NatWest: £6,231,838,763.46
+• Stressed Assets:  £24,218,709,369.47 is now £17,986,870,606.00
+• Remaining Buffer: £17,986,870,606.00
+Impact of failure of Santander:
+↳ Impact on Lloyd's:
+• Exposure to Santander: £1,699,113,843.76
+• Stressed Assets:  £7,671,983,385.77 is now £5,972,869,542.01
+• Remaining Buffer: £5,972,869,542.01
+↳ Impact on Standard Chartered:
+• Exposure to Santander: £3,593,354,516.49
+• Stressed Assets:  £17,986,870,606.00 is now £14,393,516,089.51
+• Remaining Buffer: £14,393,516,089.51
+Impact of failure of Barclays:
+↳ Impact on Lloyd's:
+• Exposure to Barclays: £28,399,874,432.41
+• Stressed Assets:  £5,972,869,542.01 is now £-22,427,004,890.40
+• Remaining Buffer: £-22,427,004,890.40
+↳ Impact on Standard Chartered:
+• Exposure to Barclays: £60,061,200,392.45
+• Stressed Assets:  £14,393,516,089.51 is now £-45,667,684,302.94
+• Remaining Buffer: £-45,667,684,302.94
+Impact of failure of Lloyd's:
+No surviving counterparties to continue cascade analysis.
+Impact of failure of Standard Chartered:
+No surviving counterparties to continue cascade analysis.
+Initial Breaches: ['HSBC', 'NatWest', 'Santander']
+Final Failed Banks: ['Barclays', 'HSBC', 'NatWest', "Lloyd's", 'Santander', 'Standard Chartered']
+Surviving Banks: []
+Total Cascade Size: 6
+
+
+
+================ For the Year 2023 ================
+
+Baseline Balance Sheets:
+              Bank  Liquid Assets  Volatile Funding  Tangible Equity  Initial Liquidity Buffer
+          Barclays   376359000000      308713000000      63410000000               67646000000
+              HSBC   228612222000      229220993000     135594257000                -608771000
+           NatWest    59840000000       82904000000      29543000000              -23064000000
+           Lloyd's    56184000000       21723000000      38858000000               34461000000
+         Santander    71454199000       98752925000      65475344000              -27298726000
+Standard Chartered   119049188000       43979760000      34316310000               75069428000
+
+
+Exposure Matrix (Before Diagonal Corrections):
+
+                      Barclays       HSBC    NatWest   Lloyd's  Standard Chartered  Santander
+Barclays           127,468,012 94,645,656 34,231,173 8,969,456          40,775,215 18,159,302
+HSBC                77,428,056 57,490,730 20,793,085 5,448,328          24,768,140 11,030,528
+NatWest             20,267,048 15,048,387  5,442,658 1,426,118           6,483,142  2,887,277
+Lloyd's             19,028,807 14,128,987  5,110,132 1,338,987           6,087,046  2,710,875
+Standard Chartered  24,200,630 17,969,092  6,499,010 1,702,909           7,741,439  3,447,661
+Santander           40,320,448 29,938,140 10,827,942 2,837,202          12,897,941  5,744,117
+
+
+Liability Matrix (After Diagonal Corrections):
+
+                      Barclays        HSBC    NatWest    Lloyd's  Standard Chartered  Santander
+Barclays                     0 168,895,737 51,504,438 13,431,614          61,928,153 28,488,873
+HSBC               146,709,248           0 16,659,331  4,344,513          20,030,926  9,214,848
+NatWest             32,194,928  11,988,409          0    953,391           4,395,730  2,022,172
+Lloyd's             28,722,337  10,695,322  3,261,518          0           3,921,600  1,804,058
+Standard Chartered  39,003,319  14,523,646  4,428,959  1,155,008                   0  2,449,809
+Santander           62,083,168  23,117,878  7,049,754  1,838,474           8,476,516          0
+
+----- Using runoff rate: 0.1 -----
+Initial Breaches: []
+Final Failed Banks: []
+Surviving Banks: ['Barclays', 'HSBC', 'NatWest', "Lloyd's", 'Santander', 'Standard Chartered']
+Total Cascade Size: 0
+
+
+----- Using runoff rate: 0.2 -----
+Initial Breaches: []
+Final Failed Banks: []
+Surviving Banks: ['Barclays', 'HSBC', 'NatWest', "Lloyd's", 'Santander', 'Standard Chartered']
+Total Cascade Size: 0
+
+
+----- Using runoff rate: 0.3 -----
+Initial Breaches: []
+Final Failed Banks: []
+Surviving Banks: ['Barclays', 'HSBC', 'NatWest', "Lloyd's", 'Santander', 'Standard Chartered']
+Total Cascade Size: 0
+
+
+----- Using runoff rate: 0.4 -----
+Initial Breaches: []
+Final Failed Banks: []
+Surviving Banks: ['Barclays', 'HSBC', 'NatWest', "Lloyd's", 'Santander', 'Standard Chartered']
+Total Cascade Size: 0
+
+
+----- Using runoff rate: 0.5 -----
+Initial Breaches: []
+Final Failed Banks: []
+Surviving Banks: ['Barclays', 'HSBC', 'NatWest', "Lloyd's", 'Santander', 'Standard Chartered']
+Total Cascade Size: 0
+
+
+----- Using runoff rate: 0.6 -----
+Initial Breaches: []
+Final Failed Banks: []
+Surviving Banks: ['Barclays', 'HSBC', 'NatWest', "Lloyd's", 'Santander', 'Standard Chartered']
+Total Cascade Size: 0
+
+
+----- Using runoff rate: 0.7 -----
+Initial Breaches: []
+Final Failed Banks: []
+Surviving Banks: ['Barclays', 'HSBC', 'NatWest', "Lloyd's", 'Santander', 'Standard Chartered']
+Total Cascade Size: 0
+
+
+----- Using runoff rate: 0.8 -----
+Impact of failure of NatWest:
+↳ Impact on Barclays:
+• Exposure to NatWest: £51,504,438,213.51
+• Stressed Assets:  £129,388,600,000.00 is now £77,884,161,786.49
+• Remaining Buffer: £16,141,561,786.49
+↳ Impact on HSBC:
+• Exposure to NatWest: £16,659,331,055.76
+• Stressed Assets:  £45,235,427,600.00 is now £28,576,096,544.24
+• Remaining Buffer: £-17,268,102,055.76
+↳ Impact on Lloyd's:
+• Exposure to NatWest: £3,261,518,427.17
+• Stressed Assets:  £38,805,600,000.00 is now £35,544,081,572.83
+• Remaining Buffer: £31,199,481,572.83
+↳ Impact on Standard Chartered:
+• Exposure to NatWest: £4,428,958,741.60
+• Stressed Assets:  £83,865,380,000.00 is now £79,436,421,258.40
+• Remaining Buffer: £70,640,469,258.40
+Impact of failure of Santander:
+↳ Impact on Barclays:
+• Exposure to Santander: £28,488,872,930.12
+• Stressed Assets:  £77,884,161,786.49 is now £49,395,288,856.36
+• Remaining Buffer: £-12,347,311,143.64
+↳ Impact on Lloyd's:
+• Exposure to Santander: £1,804,057,810.43
+• Stressed Assets:  £35,544,081,572.83 is now £33,740,023,762.39
+• Remaining Buffer: £29,395,423,762.39
+↳ Impact on Standard Chartered:
+• Exposure to Santander: £2,449,809,126.72
+• Stressed Assets:  £79,436,421,258.40 is now £76,986,612,131.68
+• Remaining Buffer: £68,190,660,131.68
+Impact of failure of HSBC:
+↳ Impact on Lloyd's:
+• Exposure to HSBC: £10,695,322,150.49
+• Stressed Assets:  £33,740,023,762.39 is now £23,044,701,611.90
+• Remaining Buffer: £18,700,101,611.90
+↳ Impact on Standard Chartered:
+• Exposure to HSBC: £14,523,646,451.89
+• Stressed Assets:  £76,986,612,131.68 is now £62,462,965,679.80
+• Remaining Buffer: £53,667,013,679.80
+Impact of failure of Barclays:
+↳ Impact on Lloyd's:
+• Exposure to Barclays: £28,722,336,754.18
+• Stressed Assets:  £23,044,701,611.90 is now £-5,677,635,142.28
+• Remaining Buffer: £-10,022,235,142.28
+↳ Impact on Standard Chartered:
+• Exposure to Barclays: £39,003,319,247.44
+• Stressed Assets:  £62,462,965,679.80 is now £23,459,646,432.35
+• Remaining Buffer: £14,663,694,432.35
+Impact of failure of Lloyd's:
+↳ Impact on Standard Chartered:
+• Exposure to Lloyd's: £1,155,008,475.41
+• Stressed Assets:  £23,459,646,432.35 is now £22,304,637,956.94
+• Remaining Buffer: £13,508,685,956.94
+Initial Breaches: ['NatWest', 'Santander']
+Final Failed Banks: ['Barclays', 'HSBC', 'NatWest', "Lloyd's", 'Santander']
+Surviving Banks: ['Standard Chartered']
+Total Cascade Size: 5
+
+
+----- Using runoff rate: 0.9 -----
+Impact of failure of NatWest:
+↳ Impact on Barclays:
+• Exposure to NatWest: £51,504,438,213.51
+• Stressed Assets:  £98,517,300,000.00 is now £47,012,861,786.49
+• Remaining Buffer: £16,141,561,786.49
+↳ Impact on HSBC:
+• Exposure to NatWest: £16,659,331,055.76
+• Stressed Assets:  £22,313,328,300.00 is now £5,653,997,244.24
+• Remaining Buffer: £-17,268,102,055.76
+↳ Impact on Lloyd's:
+• Exposure to NatWest: £3,261,518,427.17
+• Stressed Assets:  £36,633,300,000.00 is now £33,371,781,572.83
+• Remaining Buffer: £31,199,481,572.83
+↳ Impact on Standard Chartered:
+• Exposure to NatWest: £4,428,958,741.60
+• Stressed Assets:  £79,467,404,000.00 is now £75,038,445,258.40
+• Remaining Buffer: £70,640,469,258.40
+Impact of failure of Santander:
+↳ Impact on Barclays:
+• Exposure to Santander: £28,488,872,930.12
+• Stressed Assets:  £47,012,861,786.49 is now £18,523,988,856.36
+• Remaining Buffer: £-12,347,311,143.64
+↳ Impact on Lloyd's:
+• Exposure to Santander: £1,804,057,810.43
+• Stressed Assets:  £33,371,781,572.83 is now £31,567,723,762.39
+• Remaining Buffer: £29,395,423,762.39
+↳ Impact on Standard Chartered:
+• Exposure to Santander: £2,449,809,126.72
+• Stressed Assets:  £75,038,445,258.40 is now £72,588,636,131.68
+• Remaining Buffer: £68,190,660,131.68
+Impact of failure of HSBC:
+↳ Impact on Lloyd's:
+• Exposure to HSBC: £10,695,322,150.49
+• Stressed Assets:  £31,567,723,762.39 is now £20,872,401,611.90
+• Remaining Buffer: £18,700,101,611.90
+↳ Impact on Standard Chartered:
+• Exposure to HSBC: £14,523,646,451.89
+• Stressed Assets:  £72,588,636,131.68 is now £58,064,989,679.80
+• Remaining Buffer: £53,667,013,679.80
+Impact of failure of Barclays:
+↳ Impact on Lloyd's:
+• Exposure to Barclays: £28,722,336,754.18
+• Stressed Assets:  £20,872,401,611.90 is now £-7,849,935,142.28
+• Remaining Buffer: £-10,022,235,142.28
+↳ Impact on Standard Chartered:
+• Exposure to Barclays: £39,003,319,247.44
+• Stressed Assets:  £58,064,989,679.80 is now £19,061,670,432.35
+• Remaining Buffer: £14,663,694,432.35
+Impact of failure of Lloyd's:
+↳ Impact on Standard Chartered:
+• Exposure to Lloyd's: £1,155,008,475.41
+• Stressed Assets:  £19,061,670,432.35 is now £17,906,661,956.94
+• Remaining Buffer: £13,508,685,956.94
+Initial Breaches: ['NatWest', 'Santander']
+Final Failed Banks: ['Barclays', 'HSBC', 'NatWest', "Lloyd's", 'Santander']
+Surviving Banks: ['Standard Chartered']
+Total Cascade Size: 5
+
+
+----- Using runoff rate: 1.0 -----
+Impact of failure of HSBC:
+↳ Impact on Barclays:
+• Exposure to HSBC: £168,895,737,115.51
+• Stressed Assets:  £67,646,000,000.00 is now £-101,249,737,115.51
+• Remaining Buffer: £-101,249,737,115.51
+↳ Impact on Lloyd's:
+• Exposure to HSBC: £10,695,322,150.49
+• Stressed Assets:  £34,461,000,000.00 is now £23,765,677,849.51
+• Remaining Buffer: £23,765,677,849.51
+↳ Impact on Standard Chartered:
+• Exposure to HSBC: £14,523,646,451.89
+• Stressed Assets:  £75,069,428,000.00 is now £60,545,781,548.11
+• Remaining Buffer: £60,545,781,548.11
+Impact of failure of NatWest:
+↳ Impact on Lloyd's:
+• Exposure to NatWest: £3,261,518,427.17
+• Stressed Assets:  £23,765,677,849.51 is now £20,504,159,422.34
+• Remaining Buffer: £20,504,159,422.34
+↳ Impact on Standard Chartered:
+• Exposure to NatWest: £4,428,958,741.60
+• Stressed Assets:  £60,545,781,548.11 is now £56,116,822,806.52
+• Remaining Buffer: £56,116,822,806.52
+Impact of failure of Santander:
+↳ Impact on Lloyd's:
+• Exposure to Santander: £1,804,057,810.43
+• Stressed Assets:  £20,504,159,422.34 is now £18,700,101,611.90
+• Remaining Buffer: £18,700,101,611.90
+↳ Impact on Standard Chartered:
+• Exposure to Santander: £2,449,809,126.72
+• Stressed Assets:  £56,116,822,806.52 is now £53,667,013,679.80
+• Remaining Buffer: £53,667,013,679.80
+Impact of failure of Barclays:
+↳ Impact on Lloyd's:
+• Exposure to Barclays: £28,722,336,754.18
+• Stressed Assets:  £18,700,101,611.90 is now £-10,022,235,142.28
+• Remaining Buffer: £-10,022,235,142.28
+↳ Impact on Standard Chartered:
+• Exposure to Barclays: £39,003,319,247.44
+• Stressed Assets:  £53,667,013,679.80 is now £14,663,694,432.35
+• Remaining Buffer: £14,663,694,432.35
+Impact of failure of Lloyd's:
+↳ Impact on Standard Chartered:
+• Exposure to Lloyd's: £1,155,008,475.41
+• Stressed Assets:  £14,663,694,432.35 is now £13,508,685,956.94
+• Remaining Buffer: £13,508,685,956.94
+Initial Breaches: ['HSBC', 'NatWest', 'Santander']
+Final Failed Banks: ['Barclays', 'HSBC', 'NatWest', "Lloyd's", 'Santander']
+Surviving Banks: ['Standard Chartered']
+Total Cascade Size: 5
+
+
+
+================ For the Year 2024 ================
+
+Baseline Balance Sheets:
+              Bank  Liquid Assets  Volatile Funding  Tangible Equity  Initial Liquidity Buffer
+          Barclays   356691000000      336323000000      63546000000               20368000000
+              HSBC   216776279000      249062176000     137751616000              -32285897000
+           NatWest    75587000000       82830000000      31762000000               -7243000000
+           Lloyd's    69942000000       24093000000      37528000000               45849000000
+         Santander    72387801000      105322754000      65577320000              -32934953000
+Standard Chartered   119436507000       65499242000      35995690000               53937265000
+
+
+Exposure Matrix (Before Diagonal Corrections):
+
+                      Barclays       HSBC    NatWest   Lloyd's  Standard Chartered  Santander
+Barclays           131,709,130 97,536,483 32,437,470 9,435,180          41,245,970 25,650,485
+HSBC                80,045,236 59,277,066 19,713,629 5,734,160          25,066,929 15,588,890
+NatWest             27,910,707 20,669,123  6,873,880 1,999,425           8,740,504  5,435,638
+Lloyd's             25,826,275 19,125,508  6,360,524 1,850,104           8,087,744  5,029,693
+Standard Chartered  26,729,394 19,794,308  6,582,945 1,914,800           8,370,565  5,205,576
+Santander           44,102,258 32,659,688 10,861,553 3,159,331          13,811,043  8,588,959
+
+
+Liability Matrix (After Diagonal Corrections):
+
+                      Barclays        HSBC    NatWest    Lloyd's  Standard Chartered  Santander
+Barclays                     0 172,585,308 48,993,616 14,152,090          62,208,424 40,075,280
+HSBC               147,891,418           0 17,039,429  4,921,938          21,635,391 13,937,732
+NatWest             42,644,691  17,307,780          0  1,419,248           6,238,594  4,018,964
+Lloyd's             37,624,558  15,270,308  4,334,944          0           5,504,187  3,545,852
+Standard Chartered  41,609,608  16,887,681  4,794,085  1,384,799                   0  3,921,415
+Santander           66,552,724  27,011,098  7,667,926  2,214,925           9,736,158          0
+
+----- Using runoff rate: 0.1 -----
+Initial Breaches: []
+Final Failed Banks: []
+Surviving Banks: ['Barclays', 'HSBC', 'NatWest', "Lloyd's", 'Santander', 'Standard Chartered']
+Total Cascade Size: 0
+
+
+----- Using runoff rate: 0.2 -----
+Initial Breaches: []
+Final Failed Banks: []
+Surviving Banks: ['Barclays', 'HSBC', 'NatWest', "Lloyd's", 'Santander', 'Standard Chartered']
+Total Cascade Size: 0
+
+
+----- Using runoff rate: 0.3 -----
+Initial Breaches: []
+Final Failed Banks: []
+Surviving Banks: ['Barclays', 'HSBC', 'NatWest', "Lloyd's", 'Santander', 'Standard Chartered']
+Total Cascade Size: 0
+
+
+----- Using runoff rate: 0.4 -----
+Initial Breaches: []
+Final Failed Banks: []
+Surviving Banks: ['Barclays', 'HSBC', 'NatWest', "Lloyd's", 'Santander', 'Standard Chartered']
+Total Cascade Size: 0
+
+
+----- Using runoff rate: 0.5 -----
+Initial Breaches: []
+Final Failed Banks: []
+Surviving Banks: ['Barclays', 'HSBC', 'NatWest', "Lloyd's", 'Santander', 'Standard Chartered']
+Total Cascade Size: 0
+
+
+----- Using runoff rate: 0.6 -----
+Initial Breaches: []
+Final Failed Banks: []
+Surviving Banks: ['Barclays', 'HSBC', 'NatWest', "Lloyd's", 'Santander', 'Standard Chartered']
+Total Cascade Size: 0
+
+
+----- Using runoff rate: 0.7 -----
+Impact of failure of Santander:
+↳ Impact on Barclays:
+• Exposure to Santander: £40,075,279,774.53
+• Stressed Assets:  £121,264,900,000.00 is now £81,189,620,225.47
+• Remaining Buffer: £-19,707,279,774.53
+↳ Impact on HSBC:
+• Exposure to Santander: £13,937,732,127.87
+• Stressed Assets:  £42,432,755,800.00 is now £28,495,023,672.13
+• Remaining Buffer: £-46,223,629,127.87
+↳ Impact on NatWest:
+• Exposure to Santander: £4,018,963,967.63
+• Stressed Assets:  £17,606,000,000.00 is now £13,587,036,032.37
+• Remaining Buffer: £-11,261,963,967.63
+↳ Impact on Lloyd's:
+• Exposure to Santander: £3,545,851,507.49
+• Stressed Assets:  £53,076,900,000.00 is now £49,531,048,492.51
+• Remaining Buffer: £42,303,148,492.51
+↳ Impact on Standard Chartered:
+• Exposure to Santander: £3,921,414,622.48
+• Stressed Assets:  £73,587,037,600.00 is now £69,665,622,977.52
+• Remaining Buffer: £50,015,850,377.52
+Impact of failure of Barclays:
+↳ Impact on Lloyd's:
+• Exposure to Barclays: £37,624,557,873.49
+• Stressed Assets:  £49,531,048,492.51 is now £11,906,490,619.02
+• Remaining Buffer: £4,678,590,619.02
+↳ Impact on Standard Chartered:
+• Exposure to Barclays: £41,609,608,044.14
+• Stressed Assets:  £69,665,622,977.52 is now £28,056,014,933.38
+• Remaining Buffer: £8,406,242,333.38
+Impact of failure of HSBC:
+↳ Impact on Lloyd's:
+• Exposure to HSBC: £15,270,308,255.07
+• Stressed Assets:  £11,906,490,619.02 is now £-3,363,817,636.06
+• Remaining Buffer: £-10,591,717,636.06
+↳ Impact on Standard Chartered:
+• Exposure to HSBC: £16,887,681,267.73
+• Stressed Assets:  £28,056,014,933.38 is now £11,168,333,665.65
+• Remaining Buffer: £-8,481,438,934.35
+Impact of failure of NatWest:
+No surviving counterparties to continue cascade analysis.
+Impact of failure of Lloyd's:
+No surviving counterparties to continue cascade analysis.
+Impact of failure of Standard Chartered:
+No surviving counterparties to continue cascade analysis.
+Initial Breaches: ['Santander']
+Final Failed Banks: ['Barclays', 'HSBC', 'NatWest', "Lloyd's", 'Santander', 'Standard Chartered']
+Surviving Banks: []
+Total Cascade Size: 6
+
+
+----- Using runoff rate: 0.8 -----
+Impact of failure of Santander:
+↳ Impact on Barclays:
+• Exposure to Santander: £40,075,279,774.53
+• Stressed Assets:  £87,632,600,000.00 is now £47,557,320,225.47
+• Remaining Buffer: £-19,707,279,774.53
+↳ Impact on HSBC:
+• Exposure to Santander: £13,937,732,127.87
+• Stressed Assets:  £17,526,538,200.00 is now £3,588,806,072.13
+• Remaining Buffer: £-46,223,629,127.87
+↳ Impact on NatWest:
+• Exposure to Santander: £4,018,963,967.63
+• Stressed Assets:  £9,323,000,000.00 is now £5,304,036,032.37
+• Remaining Buffer: £-11,261,963,967.63
+↳ Impact on Lloyd's:
+• Exposure to Santander: £3,545,851,507.49
+• Stressed Assets:  £50,667,600,000.00 is now £47,121,748,492.51
+• Remaining Buffer: £42,303,148,492.51
+↳ Impact on Standard Chartered:
+• Exposure to Santander: £3,921,414,622.48
+• Stressed Assets:  £67,037,113,400.00 is now £63,115,698,777.52
+• Remaining Buffer: £50,015,850,377.52
+Impact of failure of Barclays:
+↳ Impact on Lloyd's:
+• Exposure to Barclays: £37,624,557,873.49
+• Stressed Assets:  £47,121,748,492.51 is now £9,497,190,619.02
+• Remaining Buffer: £4,678,590,619.02
+↳ Impact on Standard Chartered:
+• Exposure to Barclays: £41,609,608,044.14
+• Stressed Assets:  £63,115,698,777.52 is now £21,506,090,733.38
+• Remaining Buffer: £8,406,242,333.38
+Impact of failure of HSBC:
+↳ Impact on Lloyd's:
+• Exposure to HSBC: £15,270,308,255.07
+• Stressed Assets:  £9,497,190,619.02 is now £-5,773,117,636.06
+• Remaining Buffer: £-10,591,717,636.06
+↳ Impact on Standard Chartered:
+• Exposure to HSBC: £16,887,681,267.73
+• Stressed Assets:  £21,506,090,733.38 is now £4,618,409,465.65
+• Remaining Buffer: £-8,481,438,934.35
+Impact of failure of NatWest:
+No surviving counterparties to continue cascade analysis.
+Impact of failure of Lloyd's:
+No surviving counterparties to continue cascade analysis.
+Impact of failure of Standard Chartered:
+No surviving counterparties to continue cascade analysis.
+Initial Breaches: ['Santander']
+Final Failed Banks: ['Barclays', 'HSBC', 'NatWest', "Lloyd's", 'Santander', 'Standard Chartered']
+Surviving Banks: []
+Total Cascade Size: 6
+
+
+----- Using runoff rate: 0.9 -----
+Impact of failure of HSBC:
+↳ Impact on Barclays:
+• Exposure to HSBC: £172,585,308,288.40
+• Stressed Assets:  £54,000,300,000.00 is now £-118,585,008,288.40
+• Remaining Buffer: £-152,217,308,288.40
+↳ Impact on NatWest:
+• Exposure to HSBC: £17,307,780,239.00
+• Stressed Assets:  £1,040,000,000.00 is now £-16,267,780,239.00
+• Remaining Buffer: £-24,550,780,239.00
+↳ Impact on Lloyd's:
+• Exposure to HSBC: £15,270,308,255.07
+• Stressed Assets:  £48,258,300,000.00 is now £32,987,991,744.93
+• Remaining Buffer: £30,578,691,744.93
+↳ Impact on Standard Chartered:
+• Exposure to HSBC: £16,887,681,267.73
+• Stressed Assets:  £60,487,189,200.00 is now £43,599,507,932.27
+• Remaining Buffer: £37,049,583,732.27
+Impact of failure of Santander:
+↳ Impact on Lloyd's:
+• Exposure to Santander: £3,545,851,507.49
+• Stressed Assets:  £32,987,991,744.93 is now £29,442,140,237.43
+• Remaining Buffer: £27,032,840,237.43
+↳ Impact on Standard Chartered:
+• Exposure to Santander: £3,921,414,622.48
+• Stressed Assets:  £43,599,507,932.27 is now £39,678,093,309.79
+• Remaining Buffer: £33,128,169,109.79
+Impact of failure of Barclays:
+↳ Impact on Lloyd's:
+• Exposure to Barclays: £37,624,557,873.49
+• Stressed Assets:  £29,442,140,237.43 is now £-8,182,417,636.06
+• Remaining Buffer: £-10,591,717,636.06
+↳ Impact on Standard Chartered:
+• Exposure to Barclays: £41,609,608,044.14
+• Stressed Assets:  £39,678,093,309.79 is now £-1,931,514,734.35
+• Remaining Buffer: £-8,481,438,934.35
+Impact of failure of NatWest:
+No surviving counterparties to continue cascade analysis.
+Impact of failure of Lloyd's:
+No surviving counterparties to continue cascade analysis.
+Impact of failure of Standard Chartered:
+No surviving counterparties to continue cascade analysis.
+Initial Breaches: ['HSBC', 'Santander']
+Final Failed Banks: ['Barclays', 'HSBC', 'NatWest', "Lloyd's", 'Santander', 'Standard Chartered']
+Surviving Banks: []
+Total Cascade Size: 6
+
+
+----- Using runoff rate: 1.0 -----
+Impact of failure of HSBC:
+↳ Impact on Barclays:
+• Exposure to HSBC: £172,585,308,288.40
+• Stressed Assets:  £20,368,000,000.00 is now £-152,217,308,288.40
+• Remaining Buffer: £-152,217,308,288.40
+↳ Impact on Lloyd's:
+• Exposure to HSBC: £15,270,308,255.07
+• Stressed Assets:  £45,849,000,000.00 is now £30,578,691,744.93
+• Remaining Buffer: £30,578,691,744.93
+↳ Impact on Standard Chartered:
+• Exposure to HSBC: £16,887,681,267.73
+• Stressed Assets:  £53,937,265,000.00 is now £37,049,583,732.27
+• Remaining Buffer: £37,049,583,732.27
+Impact of failure of NatWest:
+↳ Impact on Lloyd's:
+• Exposure to NatWest: £4,334,943,856.23
+• Stressed Assets:  £30,578,691,744.93 is now £26,243,747,888.69
+• Remaining Buffer: £26,243,747,888.69
+↳ Impact on Standard Chartered:
+• Exposure to NatWest: £4,794,084,633.71
+• Stressed Assets:  £37,049,583,732.27 is now £32,255,499,098.57
+• Remaining Buffer: £32,255,499,098.57
+Impact of failure of Santander:
+↳ Impact on Lloyd's:
+• Exposure to Santander: £3,545,851,507.49
+• Stressed Assets:  £26,243,747,888.69 is now £22,697,896,381.20
+• Remaining Buffer: £22,697,896,381.20
+↳ Impact on Standard Chartered:
+• Exposure to Santander: £3,921,414,622.48
+• Stressed Assets:  £32,255,499,098.57 is now £28,334,084,476.09
+• Remaining Buffer: £28,334,084,476.09
+Impact of failure of Barclays:
+↳ Impact on Lloyd's:
+• Exposure to Barclays: £37,624,557,873.49
+• Stressed Assets:  £22,697,896,381.20 is now £-14,926,661,492.29
+• Remaining Buffer: £-14,926,661,492.29
+↳ Impact on Standard Chartered:
+• Exposure to Barclays: £41,609,608,044.14
+• Stressed Assets:  £28,334,084,476.09 is now £-13,275,523,568.05
+• Remaining Buffer: £-13,275,523,568.05
+Impact of failure of Lloyd's:
+No surviving counterparties to continue cascade analysis.
+Impact of failure of Standard Chartered:
+No surviving counterparties to continue cascade analysis.
+Initial Breaches: ['HSBC', 'NatWest', 'Santander']
+Final Failed Banks: ['Barclays', 'HSBC', 'NatWest', "Lloyd's", 'Santander', 'Standard Chartered']
+Surviving Banks: []
+Total Cascade Size: 6
+
+
+
+================ For the Year 2025 ================
+
+Baseline Balance Sheets:
+              Bank  Liquid Assets  Volatile Funding  Tangible Equity  Initial Liquidity Buffer
+          Barclays   379862000000      298545000000      69500000000               81317000000
+              HSBC   244110475000      215994349000     137623968000               28116126000
+           NatWest    80493000000       61712000000      35307000000               18781000000
+           Lloyd's    71967000000       18088000000      39075000000               53879000000
+         Santander    82077877000      109817531000      74962459000              -27739654000
+Standard Chartered   120344956000       50705524000      35603301000               69639432000
+
+
+Exposure Matrix (Before Diagonal Corrections):
+
+                      Barclays       HSBC    NatWest   Lloyd's  Standard Chartered  Santander
+Barclays           115,855,632 83,820,402 23,948,426 7,019,366          42,616,622 19,677,169
+HSBC                74,452,231 53,865,452 15,389,962 4,510,851          27,386,693 12,645,127
+NatWest             24,549,882 17,761,597  5,074,687 1,487,408           9,030,489  4,169,605
+Lloyd's             21,949,504 15,880,248  4,537,164 1,329,859           8,073,960  3,727,951
+Standard Chartered  25,033,260 18,111,316  5,174,605 1,516,695           9,208,296  4,251,703
+Santander           36,704,490 26,555,335  7,587,156 2,223,822          13,501,470  6,233,969
+
+
+Liability Matrix (After Diagonal Corrections):
+
+                      Barclays        HSBC    NatWest    Lloyd's  Standard Chartered  Santander
+Barclays                     0 150,597,903 36,287,775 10,549,920          64,830,240 30,671,781
+HSBC               136,314,225           0 13,240,473  3,849,394          23,654,882 11,191,342
+NatWest             36,795,773  14,832,653          0  1,039,080           6,385,245  3,020,918
+Lloyd's             31,607,494  12,741,218  3,070,099          0           5,484,912  2,594,962
+Standard Chartered  39,300,094  15,842,164  3,817,297  1,109,800                   0  3,226,521
+Santander           54,527,415  21,980,411  5,296,357  1,539,806           9,462,252          0
+
+----- Using runoff rate: 0.1 -----
+Initial Breaches: []
+Final Failed Banks: []
+Surviving Banks: ['Barclays', 'HSBC', 'NatWest', "Lloyd's", 'Santander', 'Standard Chartered']
+Total Cascade Size: 0
+
+
+----- Using runoff rate: 0.2 -----
+Initial Breaches: []
+Final Failed Banks: []
+Surviving Banks: ['Barclays', 'HSBC', 'NatWest', "Lloyd's", 'Santander', 'Standard Chartered']
+Total Cascade Size: 0
+
+
+----- Using runoff rate: 0.3 -----
+Initial Breaches: []
+Final Failed Banks: []
+Surviving Banks: ['Barclays', 'HSBC', 'NatWest', "Lloyd's", 'Santander', 'Standard Chartered']
+Total Cascade Size: 0
+
+
+----- Using runoff rate: 0.4 -----
+Initial Breaches: []
+Final Failed Banks: []
+Surviving Banks: ['Barclays', 'HSBC', 'NatWest', "Lloyd's", 'Santander', 'Standard Chartered']
+Total Cascade Size: 0
+
+
+----- Using runoff rate: 0.5 -----
+Initial Breaches: []
+Final Failed Banks: []
+Surviving Banks: ['Barclays', 'HSBC', 'NatWest', "Lloyd's", 'Santander', 'Standard Chartered']
+Total Cascade Size: 0
+
+
+----- Using runoff rate: 0.6 -----
+Initial Breaches: []
+Final Failed Banks: []
+Surviving Banks: ['Barclays', 'HSBC', 'NatWest', "Lloyd's", 'Santander', 'Standard Chartered']
+Total Cascade Size: 0
+
+
+----- Using runoff rate: 0.7 -----
+Initial Breaches: []
+Final Failed Banks: []
+Surviving Banks: ['Barclays', 'HSBC', 'NatWest', "Lloyd's", 'Santander', 'Standard Chartered']
+Total Cascade Size: 0
+
+
+----- Using runoff rate: 0.8 -----
+Impact of failure of Santander:
+↳ Impact on Barclays:
+• Exposure to Santander: £30,671,780,938.35
+• Stressed Assets:  £141,026,000,000.00 is now £110,354,219,061.65
+• Remaining Buffer: £50,645,219,061.65
+↳ Impact on HSBC:
+• Exposure to Santander: £11,191,341,628.59
+• Stressed Assets:  £71,314,995,800.00 is now £60,123,654,171.41
+• Remaining Buffer: £16,924,784,371.41
+↳ Impact on NatWest:
+• Exposure to Santander: £3,020,917,761.79
+• Stressed Assets:  £31,123,400,000.00 is now £28,102,482,238.21
+• Remaining Buffer: £15,760,082,238.21
+↳ Impact on Lloyd's:
+• Exposure to Santander: £2,594,962,184.28
+• Stressed Assets:  £57,496,600,000.00 is now £54,901,637,815.72
+• Remaining Buffer: £51,284,037,815.72
+↳ Impact on Standard Chartered:
+• Exposure to Santander: £3,226,521,486.99
+• Stressed Assets:  £79,780,536,800.00 is now £76,554,015,313.01
+• Remaining Buffer: £66,412,910,513.01
+Initial Breaches: ['Santander']
+Final Failed Banks: ['Santander']
+Surviving Banks: ['Barclays', 'HSBC', 'NatWest', "Lloyd's", 'Standard Chartered']
+Total Cascade Size: 1
+
+
+----- Using runoff rate: 0.9 -----
+Impact of failure of Santander:
+↳ Impact on Barclays:
+• Exposure to Santander: £30,671,780,938.35
+• Stressed Assets:  £111,171,500,000.00 is now £80,499,719,061.65
+• Remaining Buffer: £50,645,219,061.65
+↳ Impact on HSBC:
+• Exposure to Santander: £11,191,341,628.59
+• Stressed Assets:  £49,715,560,900.00 is now £38,524,219,271.41
+• Remaining Buffer: £16,924,784,371.41
+↳ Impact on NatWest:
+• Exposure to Santander: £3,020,917,761.79
+• Stressed Assets:  £24,952,200,000.00 is now £21,931,282,238.21
+• Remaining Buffer: £15,760,082,238.21
+↳ Impact on Lloyd's:
+• Exposure to Santander: £2,594,962,184.28
+• Stressed Assets:  £55,687,800,000.00 is now £53,092,837,815.72
+• Remaining Buffer: £51,284,037,815.72
+↳ Impact on Standard Chartered:
+• Exposure to Santander: £3,226,521,486.99
+• Stressed Assets:  £74,709,984,400.00 is now £71,483,462,913.01
+• Remaining Buffer: £66,412,910,513.01
+Initial Breaches: ['Santander']
+Final Failed Banks: ['Santander']
+Surviving Banks: ['Barclays', 'HSBC', 'NatWest', "Lloyd's", 'Standard Chartered']
+Total Cascade Size: 1
+
+
+----- Using runoff rate: 1.0 -----
+Impact of failure of Santander:
+↳ Impact on Barclays:
+• Exposure to Santander: £30,671,780,938.35
+• Stressed Assets:  £81,317,000,000.00 is now £50,645,219,061.65
+• Remaining Buffer: £50,645,219,061.65
+↳ Impact on HSBC:
+• Exposure to Santander: £11,191,341,628.59
+• Stressed Assets:  £28,116,126,000.00 is now £16,924,784,371.41
+• Remaining Buffer: £16,924,784,371.41
+↳ Impact on NatWest:
+• Exposure to Santander: £3,020,917,761.79
+• Stressed Assets:  £18,781,000,000.00 is now £15,760,082,238.21
+• Remaining Buffer: £15,760,082,238.21
+↳ Impact on Lloyd's:
+• Exposure to Santander: £2,594,962,184.28
+• Stressed Assets:  £53,879,000,000.00 is now £51,284,037,815.72
+• Remaining Buffer: £51,284,037,815.72
+↳ Impact on Standard Chartered:
+• Exposure to Santander: £3,226,521,486.99
+• Stressed Assets:  £69,639,432,000.00 is now £66,412,910,513.01
+• Remaining Buffer: £66,412,910,513.01
+Initial Breaches: ['Santander']
+Final Failed Banks: ['Santander']
+Surviving Banks: ['Barclays', 'HSBC', 'NatWest', "Lloyd's", 'Standard Chartered']
+Total Cascade Size: 1
