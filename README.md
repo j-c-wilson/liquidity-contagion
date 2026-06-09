@@ -147,6 +147,8 @@ We select these five balance sheet entries because they isolate the purest, high
 
 ![alt text](https://github.com/j-c-wilson/liquidity-contagion/blob/main/Analysis.png "Findings")
 
+Please note: for all monetary values stated, in matrices and elsewhere, data is recorded in thousands of Great British Pounds (GBP).
+
 Looking across the annual graphs and matrices, one can observe a narrative about the changing state of liquidity in the UK banking system following the 2022 inflationary spike and central bank rate-hike cycles.
 
 During *COVID-19*, central banks flooded the system with cheap liquidity. Banks took these massive customer deposits and parked them in "safe" long-term government bonds (UK Gilts). Balance sheets often report these bonds at *Amortized Cost* (Hold-to-Maturity) rather than *Fair Value* (Available-for-Sale). This means the raw balance sheet data understates the actual drop in liquidity because those unrealised losses are hidden until a bank is forced to sell them. When inflation surged in 2022, the *Bank of England* raised interest rates at the fastest pace in decades. Mathematically, when interest rates rocket upward, the market value of long-term bonds drops catastrophically.
